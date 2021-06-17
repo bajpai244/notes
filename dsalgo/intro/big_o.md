@@ -1,14 +1,10 @@
 # Big O
 
-Big O, is the order of growth of a function which is an upper bound for any function.
+I will use the O(g(n)) to represent Big O of functions. 
 
-So let's consider a function f(n) describing an algorithm, let there be another function g(n).
+O(g(n)) gives us the upper bound of any function f(n), which means that the function will atmost grow upto g(n) given that there exist a constant **c** and **n>=n0**
 
-f(n) <= cg(n)
-
-so for some value c and n >= n0
-
-value of f(n) <= cg(n)
+such that -> f(n) <= cg(n)
 
 which means that once the condition of c and n0 are made, cg(n) will act as an upper bound for our funtion f(n).
 
@@ -24,21 +20,23 @@ Now, a number of function can acts as its upper bound, example we can have g(n) 
 
 So to simplfy the process we take take the function with the lowest order of growth for g(n) as it will provide more accurate analysis.
 
-Now, taking the order of growth of such a function g(n) helps us eliminate the need of always needing a constant c.
+Now, g(n) represents order of growth and so the relation that it translates doesn't include constants and lower order terms.
 
-This helps us to simply say that the function f(n) in it's worst case will grow with the order of growth of O(n) {Big O of n}
+As we can add them on our own and the their possible values are beyond our managing capabilities.
+
+O(g(n)) helps us to simply say that the function f(n) in it's worst case will grow with the order of growth of O(g(n)) {Big O of f(n)}
 
 All of these notations are simply there for us to save time when conveying and analysiing complexities of functions.
 
-ex: f(n) = 3n, when can its Big O is O(n) = n.
+ex: f(n) = 3n, when can its Big O is O(n).
 
-It simply means that in its worst case the function will grow linearly becuase we know that there will be a function g(n) along with a constant c, with an input set { n: n>=n0 } that will upper bound the function f(n).
+It simply means that in its worst case the function will grow linearly becuase we know that there will be a function g(n) {here g(n)=n} along with a constant c, with an input set { n: n>=n0 } that will upper bound the function f(n).
 
 since, f(n) <= cg(n), for {n:n>=n0}
 
 so we know that in its worst case f(n) will grow linearly. 
 
-O(n) helps us to come to this conlusion in an easier and faster way as it removes the need of c,g(n) and n0 to express this statemnent.
+O(g(n)) helps us to express complexity in a simpler way as it removes the need of c and n0 to express this statemnent. {we can always calculate them later if we need to}
 
 ## Big O for multiple variable functions
 
